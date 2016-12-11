@@ -37,6 +37,7 @@ paradoxProperties in Paradox ++= Map(
 
 libraryDependencies ++= Seq(
   "netty-uploads",
+  "netty-websockets",
   "filter-uploads",
   "specs2",
   "scalatest",
