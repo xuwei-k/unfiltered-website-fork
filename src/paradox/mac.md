@@ -17,22 +17,7 @@ The 3 components of a mac that should be provided by a server are
 
 This module provides an extractor and mac signature verification utility
 
-
-     def intent: Intent[Any, Any] = {
-       case MacAuthorization(id, nonce, bodyhash, ext, mac) & req =>
-         tokenSecret(id) match {
-           case Some(key) =>
-             // compare a signed request with the signature provided
-             Mac.sign(req, nonce, ext, bodyhash, key, algorithm).fold({ err =>
-               // error signing request...
-             }, { sig =>
-               if(sig == mac) // request is trust worthy...
-               else           // request is untrusted...
-             })
-           case _ => // could not find token for the provided id
-        }
-      }
-    
+@@snip [ ](../main/scala/mac.scala) { #example1 }
 
 ## TODO
 
