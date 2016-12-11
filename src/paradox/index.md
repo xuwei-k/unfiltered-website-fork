@@ -24,6 +24,12 @@ library. You may also want to refer to Unfiltered's
 * [ ](09/00.md)
 * [ ](10/00.md)
 * [ ](11.md)
+* [ ](mac.md)
+* [ ](netty-uploads.md)
+* [ ](netty-websockets.md)
+* [ ](oauth2.md)
+* [ ](oauth.md)
+* [ ](scalatest.md)
 * [ ](99.md)
 
 @@@
